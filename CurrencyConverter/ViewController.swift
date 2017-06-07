@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func convertCurrency(_ sender: Any) {
         
         //check to see that the text entered can be converted to a double
-        if let amount = Double(inputTextField.text!) {
+        if let number = inputTextField.text, let amount = Double(number) {
             
             dollarAmount = amount
         }
